@@ -14,7 +14,7 @@
 namespace Emojione;
 require_once('init.php');
 
-$thread = 'link:'.$website.$_GET['link'];
+$thread = 'ident:'.$_GET['ident'];
 
 $fields = (object) array(
     'forum' => DISQUS_SHORTNAME,
