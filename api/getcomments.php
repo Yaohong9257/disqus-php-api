@@ -20,7 +20,7 @@ $fields_data = array(
     'limit' => 50,
     'forum' => DISQUS_SHORTNAME,
     'order' => 'desc',
-    'thread' => 'link:'.$website.$_GET['link']
+    'thread' => 'ident:'.$_GET['ident']
 );
 $curl_url = '/api/3.0/threads/listPostsThreaded?'.http_build_query($fields_data);
 $data = curl_get($curl_url);
@@ -28,7 +28,7 @@ $data = curl_get($curl_url);
 $fields_data = array(
     'api_key' => DISQUS_PUBKEY,
     'forum' => DISQUS_SHORTNAME,
-    'thread' => 'link:'.$website.$_GET['link']
+    'thread' => 'ident:'.$_GET['ident']
 );
 $curl_url = '/api/3.0/threads/details.json?'.http_build_query($fields_data);
 $detail = curl_get($curl_url);
