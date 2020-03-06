@@ -45,7 +45,7 @@ define('DISQUS_APPROVED', true);
  */
  
 define('GRAVATAR_CDN', '//cn.gravatar.com/avatar/');
-define('EMOJI_PATH', 'https://assets-cdn.github.com/images/icons/emoji/unicode/');
+define('EMOJI_PATH', 'https://cdn.jsdelivr.net/emojione/assets/png/');
 
 /*
  * PHP Mailer 设置
